@@ -1,0 +1,176 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    .inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+    .logo{
+        a{
+            position: relative;
+            display: block;
+            width: 150px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+            color: #222;
+            @include desktop{
+                width: 120px;
+                height: 40px;
+                line-height: 40px;
+                
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;left: 0;
+                border-radius: 50%;
+                transform: rotate(0deg);
+                background: #65f242;
+                transition: 0.3s;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;left: 0;
+                border: 4px solid #fff;
+                border-radius: 50%;
+                transform: rotate(-15deg);
+                transition: 0.3s;
+            }
+            &:hover{
+                &::before{
+                    transform: rotate(-15deg);
+                }
+                &::after{
+                    transform: rotate(0deg);
+                }
+            }
+        }
+        span{
+            position: relative;
+            font-family: var(--font-en);
+            font-size: 20px;
+            @include desktop{
+                font-size: 15px;
+            }
+        }
+    } 
+    .contact-wrap{
+        background: rgba(0,0,0,0.6);
+        border-radius: 30px;
+        padding: 15px 40px;
+        backdrop-filter: blur(36px);
+        border: 4px solid #65f242;
+        @include desktop{
+            padding: 10px 20px;
+        }
+        @include tablet{
+            padding: 5px 10px;       
+        }
+        @include mobile{
+            display: none;
+        }
+        a{
+            text-transform: uppercase;
+            font-family: var(--font-en);
+            &:after{
+                position: absolute;
+                bottom: 0;left: 0;
+                width: 100%;
+                height: 100%;
+                background: #65f242;
+                border-radius: 20px;
+                content: '';
+                z-index: -1;
+                opacity: 0;
+                transition: 0.3s;
+            }
+            &:hover{
+                color: #000;
+                &:after{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .m-menu{
+        display: none;
+        .bar-wrap{
+            position: relative;
+            width: 2.7em;
+            height: 2.7em;
+            background: #fff;
+            border-radius: 50%;
+            top: 0;
+            right: 0;
+            transition: 0.7s cubic-bezier(0.5, 0.5, 0, 1), background-color 0.2s ease-in-out;
+            transform: translate(0%, 0%) rotate(0.001deg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            span{
+                position: absolute;
+                transition: 0.7s cubic-bezier(0.5, 0.5, 0, 1), background-color 0.2s ease-in-out;
+                width: 40%;
+                height: 1.5px;
+                background: #000;
+                &.bar1{
+                    transform: translateY(-0.15em) rotate(0.001deg);
+                }
+                &.bar2{
+                    transform: translateY(0.15em) rotate(0.001deg);
+                }
+            }
+            &.active{
+                .bar1{
+                    transform:rotate(45deg);
+                }
+                .bar2{
+                    transform:rotate(-45deg);
+                }
+            }
+        }
+        .m-list{
+            position: absolute;
+            top: 15px;
+            right: 14px;
+            display: flex;
+            flex-direction: column;
+            width: 160px;
+            padding: 45px 15px 20px 20px;
+            background-color: #fff;
+            border-radius: 1.5em;
+            display: none;
+            &.active{
+                display: block;
+            }
+            .m-item{
+                margin-bottom: 10px;
+                a{
+                    display: block;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    color: #000;
+                    font-family: var(--font-en);
+                }
+            }
+        }
+        @include mobile{
+            display: block;
+        }
+    }
+}

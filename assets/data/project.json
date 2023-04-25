@@ -1,0 +1,53 @@
+{
+    "items":[
+        {
+            "id":"",
+            "thumb":"./assets/images/ysl-img.png",
+            "title":"ysl",
+            "sub":"입생로랑 사이트를 gsap을 사용하여 구현한 PC적응형 사이트입니다.",
+            "link":"https://kmji.github.io/spa/",
+            "sort":"all, pc, new"
+        },
+        {
+            "id":"",
+            "thumb":"./assets/images/cafe24-img.png",
+            "title":"cafe24 마켓플러스",
+            "sub":"CAFE24 마켓플러스를 클론코딩한 반응형 사이트 입니다.",
+            "link":"https://kmji.github.io/cafe24/",
+            "sort":"all, mobile, pc, responsive, clone"
+        },
+        {
+            "id":"",
+            "thumb":"./assets/images/megabox-img.jpg",
+            "title":"megabox",
+            "sub":"메가박스 사이트를 클론코딩한 Mobile 사이트 입니다.",
+            "link":"https://kmji.github.io/megabox/",
+            "sort":"all, mobile, clone"
+        },
+        {
+            "id":"",
+            "thumb":"./assets/images/movie-img.jpg",
+            "title":"movie",
+            "sub":"OMDb API를 사용하여 구현한 영화 OTT사이트 입니다",
+            "link":"https://kmji.github.io/movie/",
+            "sort":"all, mobile, new"
+        },
+        {
+            "id":"",
+            "thumb":"./assets/images/seoul-img.jpg",
+            "title":"seoul",
+            "sub":"서울시청 사이트를 클론코딩한 PC적응형 사이트 입니다.",
+            "link":"https://kmji.github.io/seoul/",
+            "sort":"all, pc, clone"
+        },
+        {
+            "id":"",
+            "thumb":"./assets/images/naver-img.jpg",
+            "title":"naver",
+            "sub":"네이버를 클론코딩한 PC적응형 사이트 입니다.",
+            "link":"https://kmji.github.io/naver/",
+            "sort":"all, pc, clone"
+        }
+        
+    ]
+}

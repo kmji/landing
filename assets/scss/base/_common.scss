@@ -1,0 +1,32 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+.inner{
+    padding: 0 76px;
+    @include desktop{
+        padding: 0 30px;
+    }
+    @include tablet{
+        padding: 0 15px;
+    }
+}
+.cursor{
+    position: fixed;
+    top: 0;left: 0;
+    width: 20px;
+    height: 20px;
+    background: #65f242;
+    z-index: 10;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    @include mobile{
+        display: none; 
+    }
+}

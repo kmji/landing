@@ -1,0 +1,13 @@
+footer{
+    background: #65f242;
+    .copy{
+        padding: 10px 0 10px;
+        text-align: center;
+        font-family: var(--font-en);
+        color: #5e5e5e;
+        font-size: 12px;
+        @include tablet{
+            font-size: 10px;
+        }
+    }
+}

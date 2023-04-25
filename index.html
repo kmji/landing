@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINJI'S PORTFOLIO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="wrapper">
+        <header>
+            <div class="inner ">
+                <h1 class="logo">
+                    <a href=""><span>MJ.log</span></a>
+                </h1>
+                <div class="menu-wrap">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="#">about</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#project">project</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#career">career</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-wrap">
+                    <a href="#contact">contact</a>
+                </div>
+                <div class="m-menu ">
+                    <div class="bar-wrap ">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                    </div>
+                    <ul class="m-list">
+                        <li class="m-item">
+                            <a href="#">about</a>
+                        </li>
+                        <li class="m-item">
+                            <a href="#project">project</a>
+                        </li>
+                        <li class="m-item">
+                            <a href="#career">career</a>
+                        </li>
+                        <li class="m-item">
+                            <a href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="sc-about">
+                <h2>
+                    <span>안녕하세요 <img src="./assets/images/img1.png" alt=""></span>
+                    <span class="en">planned</span>
+                    <span>치밀한 계획을 잘세우며</span>
+                    <span class="en">systematic <img src="./assets/images/img2.png" alt=""></span>
+                    <span>기획을 이해하며</span>
+                    <span class="en">Cooperation</span>
+                    <span>협업에서의 <img src="./assets/images/img3.png" alt=""> 강점</span>
+                    <span class="en">POSITIVE</span>
+                    <span class="point">최종 목표는 프론트앤드</span>
+                    <span class="en">steady <img src="./assets/images/img5.png" alt=""></span>
+                    <span>꾸준한 노력</span>
+                    <span class="en">FAITHFUL</span>
+                    <span>성실하고</span>
+                    <span class="en">creative </span>
+                    <span>독창적이며</span>
+                    <span class="en">RESPONSIBLE <img src="./assets/images/img4.png" alt=""></span>
+                    <span>책임감 있는</span>
+                    <span class="point">UI개발자</span>
+                </h2>
+            </section>
+            <section class="sc-project" id="project">
+                <div class="inner">
+                    <h2 class="sc-title">project<span>(6)</span></h2>
+                    <div class="pj-wrap">
+                        <div class="btn-wrap">
+                            <div class="btn on">
+                                <a href="" data-target="all">ALL</a>
+                            </div>
+                            <div class="btn">
+                                <a href="" data-target="pc">PC</a>
+                            </div>
+                            <div class="btn">
+                                <a href="" data-target="mobile">Mobile</a>
+                            </div>
+                            <div class="btn">
+                                <a href="" data-target="responsive">반응형</a>
+                            </div>
+                            <div class="btn">
+                                <a href="" data-target="new">리뉴얼코딩</a>
+                            </div>
+                            <div class="btn">
+                                <a href="" data-target="clone">클론코딩</a>
+                            </div>
+                        </div>
+                        <ul class="pj-list" id="projectList">
+                            <!-- json 사용 -->
+                        </ul>
+                    </div>                    
+                </div>
+            </section>
+            <section class="sc-career" id="career">
+                <div class="inner">
+                    <h2 class="sc-title">career</h2>
+                    <div class="wrap">
+                        <div class="company-wrap">
+                            <span>리얼웨이브</span>
+                            <p>2021.06.28 ~ 2022.12.31</p>
+                        </div>
+                        <div class="detail-wrap">
+                            <p class="detail">
+                                롯데렌탈 운영 기획 <br> (롯데렌터카 / 롯데렌탈 기업 / 롯데렌탈 비즈니스)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-contact" id="contact">
+                <div class="inner">
+                    <h2 class="sc-title">contact</h2>
+                    <div class="wrap">
+                        <div class="left">
+                            <p>
+                                꾸준하게 배우며
+                                <br>성장하는 퍼블리셔가 되겠습니다!
+                                <br>책임감을 가지고 맡은 바에 
+                                <br> 최선을 다할것을 약속드립니다.
+                            </p>
+                            <span>※ 메일을 보내주시면 3일 이내에 확인후 연락드리겠습니다.</span>
+                        </div>
+                        <div class="right">
+                            <form action="contact-mail.php" method="post" class="form-style">
+                                <div class="col">
+                                    <label for="name">
+                                        <span>Name</span>
+                                    </label>
+                                    <input type="text" name="name" placeholder="이름을 입력하세요" required>
+                                </div>
+                                <div class="col">
+                                    <label for="tel">
+                                        <span>Tel</span>
+                                    </label>
+                                    <input type="text" name="tel" placeholder="연락처를 입력하세요" required>
+                                </div>
+                                <div class="col">
+                                    <label for="message">
+                                        <span>Message</span>
+                                    </label>
+                                    <textarea name="message" placeholder="메시지를 입력하세요" required></textarea>
+                                </div>
+                                <input type="submit" class="send-btn" value="Send">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="copy">ⓒ2023 All rights reserved.</p>
+        </footer>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
