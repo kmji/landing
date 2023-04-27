@@ -8,9 +8,9 @@
 
 <body>
     <?php
-    $name = strip_tags(htmlspecialchars($_POST['name']));
-    $tel = strip_tags(htmlspecialchars($_POST['tel']));
-    $message = strip_tags(htmlspecialchars($_POST['message']));
+    $name = strip_tags(htmlspecialchars($_GET['name']));
+    $tel = strip_tags(htmlspecialchars($_GET['tel']));
+    $message = strip_tags(htmlspecialchars($_GET['message']));
 
     
 
