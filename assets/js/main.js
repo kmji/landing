@@ -9,7 +9,7 @@ $(function(){
         })
 
     })
-    
+
     function projectList(sortData){
         fetch('./assets/data/project.json')
         .then(res=>res.json())
